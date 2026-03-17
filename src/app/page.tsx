@@ -295,7 +295,7 @@ export default function Home() {
             href="https://wa.me/c/917428199631" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-base md:text-[20px] font-bold hover:text-white transition-colors underline underline-offset-4 decoration-[#F5EFE6]/40 hover:decoration-white"
+            className="flex items-center gap-2 text-sm md:text-[20px] font-bold hover:text-white transition-colors underline underline-offset-4 decoration-[#F5EFE6]/40 hover:decoration-white"
           >
             WhatsApp Catalogue
           </a>
@@ -304,7 +304,7 @@ export default function Home() {
           
           <a 
             href="tel:+917428199631" 
-            className="text-lg md:text-[22px] font-bold tracking-widest hover:text-white transition-colors"
+            className="text-sm md:text-[22px] font-bold tracking-widest hover:text-white transition-colors"
           >
             +91 74281 99631
           </a>
