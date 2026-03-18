@@ -6,49 +6,45 @@ export default function Home() {
     <main className="min-h-screen bg-[#F5EFE6] text-[#222222] font-sans pb-12 overflow-x-hidden">
       
       {/* Hero Section */}
-      <section className="w-full min-h-screen flex flex-col items-center justify-center pt-12 md:pt-16 pb-16 md:pb-24 px-6 lg:px-12 relative">
-        <div className="w-full max-w-[1340px] flex flex-col items-center h-full justify-center space-y-8 md:space-y-12">
+      <section className="w-full h-screen flex flex-col items-center px-6 lg:px-12 relative bg-cover bg-bottom bg-no-repeat bg-[url('/Punjabi_PAPA_MObile.jpg')] md:bg-[url('/Punjabi_Papa_Desktop.jpg')] overflow-hidden">
+        <div className="w-full max-w-[1340px] flex flex-col items-center h-[75vh] md:h-[60vh] justify-center pt-2 md:pt-4 space-y-4 md:space-y-6">
           
           {/* Top Image & Hindi */}
-          <div className="flex flex-col items-center space-y-4 md:space-y-6">
+          <div className="flex flex-col items-center space-y-2 md:space-y-3">
             <div className="flex justify-center">
               <Image
                 src="/asseys/caricature.svg"
                 alt="Deepak Malik and Anil Davar - Punjabi Papa Founders Caricature"
-                width={200}
-                height={150}
-                className="w-[160px] md:w-[240px] lg:w-[280px] object-contain drop-shadow-sm"
+                width={150}
+                height={100}
+                className="w-[60px] md:w-[100px] lg:w-[130px] object-contain drop-shadow-sm"
                 priority
               />
             </div>
-            <h3 className="text-3xl md:text-[36px] lg:text-[42px] font-bold tracking-normal text-[#222222]">
+            <h3 className="text-[18px] md:text-[24px] lg:text-[28px] font-bold tracking-normal text-[#222222]">
               दो यारों की रसोई
             </h3>
           </div>
 
           {/* Main Large Typography */}
-          <h1 className="text-center text-[48px] sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[115px] leading-[0.95] font-bold tracking-tight uppercase text-[#222222] w-full">
-            A CLOUD<br />
-            KITCHEN<br />
-            STARTED BY<br />
-            TWO OLD<br />
-            SCHOOL<br />
+          <h1 className="text-center text-[34px] sm:text-[38px] md:text-[48px] lg:text-[58px] xl:text-[68px] leading-[1.05] md:leading-[1.1] font-bold tracking-tight uppercase text-[#222222] w-full max-w-5xl mx-auto px-6 md:px-4">
+            A CLOUD KITCHEN<br className="md:hidden" />
+            <span className="hidden md:inline"> </span>
+            STARTED BY TWO<br />
+            OLD SCHOOL<br className="md:hidden" />
+            <span className="hidden md:inline"> </span>
             FOOD LOVERS
           </h1>
 
-          {/* Bottom Indicators & Subtitle wrapper */}
-          <div className="w-full flex flex-col space-y-8 md:space-y-12 lg:px-16 xl:px-24">
-            <div className="w-full flex justify-between items-center">
-              <span className="text-[22px] md:text-[32px] lg:text-[36px] text-[#222222] font-normal uppercase tracking-wide">DESI</span>
-              <span className="text-[22px] md:text-[32px] lg:text-[36px] text-[#222222] font-normal uppercase tracking-wide">FRESH</span>
-            </div>
-            
-            <div className="text-center w-full">
-              <h3 className="text-[28px] md:text-[36px] lg:text-[42px] xl:text-[46px] font-normal tracking-wide text-[#222222]">
-                दिल जवान, स्वाद महान
-              </h3>
-            </div>
-          </div>
+          {/* Chat on WhatsApp Button - Visible on both Mobile & Desktop */}
+          <a
+            href="https://wa.me/c/917428199631"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border-2 md:border border-[#222222] px-8 py-3 md:px-6 md:py-2.5 text-[14px] md:text-[15px] font-bold tracking-[0.05em] uppercase text-[#00A037] hover:bg-[#222222] hover:text-[#F5EFE6] transition-colors bg-white/50 backdrop-blur-sm"
+          >
+            CHAT ON WHATSAPP
+          </a>
 
         </div>
       </section>
@@ -91,7 +87,7 @@ export default function Home() {
               alt="Deepak Malik and Anil Davar - Punjabi Papa Founders"
               width={1000}
               height={750}
-              className="w-[100%] sm:w-[85%] md:w-[95%] lg:w-[90%] xl:w-[80%] h-auto object-cover md:object-contain object-right ml-auto"
+              className="w-[100%] sm:w-[85%] md:w-[95%] lg:w-[90%] xl:w-[80%] h-auto object-cover md:object-coverthi object-right ml-auto"
               priority
             />
           </div>
