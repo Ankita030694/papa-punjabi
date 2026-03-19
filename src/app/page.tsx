@@ -10,16 +10,9 @@ export default function Home() {
         <div className="w-full max-w-[1340px] flex flex-col items-center h-[75vh] md:h-[60vh] justify-center pt-2 md:pt-4 space-y-4 md:space-y-6">
           
           {/* Top Image & Hindi */}
-          <div className="flex flex-col items-center space-y-2 md:space-y-3">
+          <div className="flex flex-col items-center space-y-2 md:space-y-3 -mt-30">
             <div className="flex justify-center">
-              <Image
-                src="/asseys/caricature.svg"
-                alt="Deepak Malik and Anil Davar - Punjabi Papa Founders Caricature"
-                width={150}
-                height={100}
-                className="w-[60px] md:w-[100px] lg:w-[130px] object-contain drop-shadow-sm"
-                priority
-              />
+             
             </div>
             <h3 className="text-[18px] md:text-[24px] lg:text-[28px] font-bold tracking-normal text-[#222222]">
               दो यारों की रसोई
@@ -267,11 +260,11 @@ export default function Home() {
           <div className="flex-1 w-full flex justify-center md:justify-end">
             <div className="relative w-full max-w-[400px] aspect-[4/3] md:aspect-[3/2] flex items-center justify-center">
               <Image
-                src="/asseys/FSSAI_Logo%201.png"
+                src="/fssaii.png"
                 alt="FSSAI Certified Kitchen"
                 width={500}
                 height={333}
-                className="object-contain"
+                className="object-cover"
                 priority={false}
               />
             </div>

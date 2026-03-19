@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Image from "next/image";
 import "./globals.css";
 
 const spaceGrotesk = localFont({
@@ -21,6 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} antialiased`}>
+        <div className="w-full bg-[#F9F1DF] py-4 flex justify-center items-center">
+          <Image 
+            src="/pp-logo.svg" 
+            alt="Punjabi Papa" 
+            width={200} 
+            height={80} 
+            className="h-26 w-auto object-contain" 
+            priority
+          />
+        </div>
         {children}
       </body>
     </html>
