@@ -3,50 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const MENU_ITEMS = [
-  {
-    title: "FAUJI MUTTON",
-    image: "Fauji Mutton.png",
-    type: "non-veg",
-    desc: "Slow-cooked mutton in a rich, spicy gravy inspired by traditional North Indian army mess recipes. Bold flavours, tender meat, and pure desi comfort.",
-  },
-  {
-    title: "CHICKEN BLACK PEPPER",
-    image: "Chicken Black Pepper.png",
-    type: "non-veg",
-    desc: "Tender chicken pieces cooked in a rich, aromatic black pepper gravy, bringing a perfect balance of spice and warmth.",
-  },
-  {
-    title: "DAL MAKHNI",
-    image: "Dal Makhni.png",
-    type: "veg",
-    desc: "Creamy, slow-cooked black lentils simmered overnight with butter and authentic spices for a rich, comforting experience.",
-  },
-  {
-    title: "PANEER MAKHNI",
-    image: "Paneer makhni.png",
-    type: "veg",
-    desc: "Soft paneer cubes tossed in a luscious tomato, butter, and cashew gravy. A rich, creamy delight for true food lovers.",
-  },
-  {
-    title: "METHI MALAI",
-    image: "Methi MAlai.png",
-    type: "veg",
-    desc: "A smooth, creamy gravy infused with the soothing flavours of fresh fenugreek leaves and a generous swirl of cream.",
-  },
-  {
-    title: "SPECIAL RAJMA",
-    image: "Special rajma.png",
-    type: "veg",
-    desc: "A nostalgic comfort dish cooked slowly with authentic Punjabi spices, delivering the true taste of a Sunday home-cooked meal.",
-  },
-  {
-    title: "BOILED RICE",
-    image: "Boiled RIce.png",
-    type: "veg",
-    desc: "Perfectly steamed, fragrant basmati rice, the ideal accompaniment to any rich and flavourful gravy.",
-  },
-];
+import { MENU_ITEMS } from "../constants/menu";
 
 export default function MenuCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -78,9 +35,9 @@ export default function MenuCarousel() {
               </h2>
             </div>
             <div className="flex-shrink-0">
-              <button className="px-8 py-3 border-[1.5px] border-[#222222] text-[#222222] text-sm md:text-base font-bold uppercase tracking-wider hover:bg-[#222222] hover:text-[#F5EFE6] transition-colors duration-300">
+              <a href="/menu" className="inline-block px-8 py-3 border-[1.5px] border-[#222222] text-[#222222] text-sm md:text-base font-bold uppercase tracking-wider hover:bg-[#222222] hover:text-[#F5EFE6] transition-colors duration-300">
                 VIEW FULL MENU
-              </button>
+              </a>
             </div>
           </div>
 
@@ -147,7 +104,7 @@ export default function MenuCarousel() {
             <div className="flex relative mt-2 md:mt-4 items-center gap-6 z-10 w-full md:w-[40%] pr-6 md:pr-0">
               <div className="h-[1px] bg-[#222222] flex-grow max-w-[150px]"></div>
               
-              {currentIndex >= 2 && (
+              {currentIndex >= 1 && (
                 <button
                   onClick={handlePrev}
                   className="text-xl font-normal uppercase tracking-wide text-[#222222] hover:opacity-70 transition-opacity"
