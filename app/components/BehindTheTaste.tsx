@@ -23,9 +23,9 @@ export default function BehindTheTaste() {
             <Image 
               src="/assets/panjabi/Frame 3.svg" 
               alt="Founders Illustration" 
-              width={320} 
-              height={320} 
-              className="w-full max-w-[280px] object-contain drop-shadow-md"
+              width={380} 
+              height={380} 
+              className="w-full max-w-[380px] object-contain drop-shadow-md"
             />
           </div>
 

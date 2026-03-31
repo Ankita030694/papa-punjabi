@@ -4,7 +4,7 @@ import BehindTheTaste from "./components/BehindTheTaste";
 import OrderMadeSimple from "./components/OrderMadeSimple";
 import HandcraftedDishes from "./components/HandcraftedDishes";
 import PunjabiCTA from "./components/PunjabiCTA";
-import CertifiedKitchen from "./components/CertifiedKitchen";
+import CertifiedKitchen from "./components/footer";
 
 export default function Home() {
   return (

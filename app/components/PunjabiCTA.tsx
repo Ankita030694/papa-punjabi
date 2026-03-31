@@ -34,98 +34,98 @@ export default function PunjabiCTA() {
     <motion.section 
       initial="initial"
       whileHover="hovered"
-      className="relative w-full overflow-hidden group cursor-default" 
-      style={{ minHeight: '520px', height: '68vh' }}
+      className="relative w-full flex flex-col md:block overflow-hidden group cursor-default" 
     >
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/assets/CTA/Subscribe.mp4" type="video/mp4" />
-      </video>
+      {/* ─── VIDEO SECTION: Video + Left Card ─── */}
+      <div className="relative h-[75vh] md:h-[80vh] md:min-h-[650px] overflow-hidden">
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/assets/CTA/Subscribe.mp4" type="video/mp4" />
+        </video>
 
-      {/* Subtle dark overlay */}
-      <div className="absolute inset-0 bg-black/15 pointer-events-none" />
+        {/* Subtle dark overlay */}
+        <div className="absolute inset-0 bg-black/15 pointer-events-none" />
 
-      {/* ─── LEFT: Floating left card ─── */}
-      <motion.div
-        initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-        viewport={{ once: true }}
-        className="absolute bottom-[10%] left-[6%] z-10 w-[300px]"
-        style={{ filter: 'drop-shadow(0 8px 32px rgba(0,0,0,0.28))' }}
-      >
-        <CardBorder className="bg-[#F0ECE0] px-8 pt-7 pb-8">
-          {/* Label */}
-          <p className="font-serif text-[#3a2e20] text-[13px] mb-4 tracking-wide">
-            Punjabi Papa
-          </p>
-          {/* Headline */}
-          <h2
-            className="font-serif font-bold text-[#3a2e20] leading-[1.05] mb-6"
-            style={{ fontSize: 'clamp(1.55rem, 2.5vw, 2rem)' }}
-          >
-            MADE WITH<br />CARE AND HEART
-          </h2>
-          {/* Description — right-aligned, italic */}
-          <p className="font-serif italic text-[#5a4530] text-[13px] leading-relaxed text-right">
-            Rooted in tradition and crafted with love,<br />
-            this is food that feels like home,<br />
-            no matter where you come from.
-          </p>
-        </CardBorder>
-      </motion.div>
+        {/* Floating left card (Now using 30% bottom on mobile for better visibility) */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true }}
+          className="absolute bottom-[10%] left-[6%] z-10 w-[280px] md:w-[300px]"
+          style={{ filter: 'drop-shadow(0 8px 32px rgba(0,0,0,0.28))' }}
+        >
+          <CardBorder className="bg-[#F0ECE0] px-6 py-6 md:px-8 md:pt-7 md:pb-8">
+            <p className="font-serif text-[#3a2e20] text-[12px] md:text-[13px] mb-3 md:mb-4 tracking-wide">
+              Punjabi Papa
+            </p>
+            <h2
+              className="font-serif font-bold text-[#3a2e20] leading-[1.05] mb-5 md:mb-6"
+              style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)' }}
+            >
+              MADE WITH<br />CARE AND HEART
+            </h2>
+            <p className="font-serif italic text-[#5a4530] text-[12px] md:text-[13px] leading-relaxed text-right">
+              Rooted in tradition and crafted with love,<br />
+              this is food that feels like home.
+            </p>
+          </CardBorder>
+        </motion.div>
+      </div>
 
-      {/* ─── RIGHT: Solid card panel (Slides in on hover) ─── */}
+      {/* ─── RIGHT CARD PANEL: Always visible on mobile, slide-in on desktop ─── */}
       <motion.div
         variants={{
           initial: { x: '100%', opacity: 0 },
           hovered: { x: 0, opacity: 1 }
         }}
+        animate={typeof window !== 'undefined' && window.innerWidth < 768 ? { x: 0, opacity: 1 } : undefined}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute right-0 top-0 h-full z-20 bg-[#F0ECE0] flex flex-col justify-center shadow-[-20px_0_50px_rgba(0,0,0,0.2)]"
-        style={{ width: 'clamp(300px, 40%, 450px)' }}
+        className="relative md:absolute md:right-0 md:top-0 md:h-full z-20 bg-[#F0ECE0] flex flex-col justify-center shadow-[-20px_0_50px_rgba(0,0,0,0.2)] md:shadow-[-20px_0_50px_rgba(0,0,0,0.2)] w-full md:w-[clamp(300px,40%,450px)]"
       >
-        <CardBorder className="h-full flex flex-col justify-between px-10 py-12">
-          <div className="flex flex-col gap-6">
+        <CardBorder className="flex-1 md:h-full flex flex-col justify-between px-8 py-10 md:px-10 md:py-12">
+          <div className="flex flex-col gap-5 md:gap-6">
             {/* Label */}
-            <p className="font-serif text-[#3a2e20] text-[11px] tracking-[0.2em] uppercase opacity-60">
+            <p className="font-serif text-[#3a2e20] text-[10px] md:text-[11px] tracking-[0.2em] uppercase opacity-60">
               Stay Connected
             </p>
 
             {/* Headline */}
             <h2
               className="font-serif font-bold text-[#3a2e20] leading-[1.08] uppercase"
-              style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.5rem)' }}
             >
               JOIN THE<br />PUNJABI PAPA<br />WHATSAPP
             </h2>
 
             {/* Body */}
             <div className="flex flex-col gap-4">
-              <p className="font-serif italic text-[#5a4530] text-[15px] leading-relaxed">
+              <p className="font-serif italic text-[#5a4530] text-[16px] md:text-[18px] leading-relaxed">
                 Be the first to know about today&apos;s specials, fresh batches, and limited
                 dishes straight from our kitchen to your phone.
               </p>
-              <p className="font-serif italic text-[#5a4530] text-[15px] leading-relaxed">
+              <p className="font-serif italic text-[#5a4530] text-[16px] md:text-[18px] leading-relaxed">
                 No spam. Just warm updates, homely food alerts, and occasional surprises.
               </p>
             </div>
           </div>
 
           {/* CTA Button block */}
-          <div className="flex flex-col gap-2 mt-8">
-            <button className="bg-[#3a2e20] text-[#F0ECE0] py-5 px-8 font-serif text-[14px] tracking-[0.2em] uppercase hover:bg-[#4e3c25] transition-colors duration-300 shadow-lg">
-              Join WhatsApp Group
+          <div className="mt-8">
+            <button className="w-full bg-[#3a2e20] text-[#F0ECE0] py-3.5 md:py-4.5 px-8 font-playfair hover:bg-[#4e3c25] transition-all duration-300 shadow-lg flex flex-col items-center justify-center gap-1 group/btn">
+              <span className="text-[17px] md:text-[20px] tracking-[0.05em] uppercase leading-tight font-bold">
+                Join WhatsApp Group
+              </span>
+              <span className="text-[10px] md:text-[12px] italic opacity-90 font-medium tracking-wide">
+                Get daily specials first
+              </span>
             </button>
-            <p className="text-center font-serif italic text-[11px] text-[#5a4530] tracking-wider mt-2 opacity-80">
-              Get daily specials first
-            </p>
           </div>
         </CardBorder>
       </motion.div>

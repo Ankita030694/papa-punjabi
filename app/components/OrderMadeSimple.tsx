@@ -58,15 +58,15 @@ function HoverVideoCard({ imageSrc, videoSrc, title, subtitle }: HoverVideoCardP
       </div>
 
       {/* Decorative Box Overlay inside image, fixed at bottom */}
-      <div className="absolute bottom-6 left-6 right-6 lg:bottom-10 lg:left-10 lg:right-10 z-10 pointer-events-none">
+      <div className="absolute bottom-6 left-4 right-4 lg:bottom-10 lg:left-8 lg:right-8 z-10 pointer-events-none">
         {/* Outer border & Box */}
-        <div className="bg-[#ebe3cf] border border-[#524131] p-1.5 shadow-2xl transition-transform duration-500 group-hover:-translate-y-2">
+        <div className="bg-[#ebe3cf] border border-[#524131] p-1 shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:bg-[#524131] group-hover:border-[#ebe3cf]">
             {/* Inner border */}
-            <div className="border border-[#524131] py-5 px-2 text-center flex flex-col items-center justify-center">
-                <h4 className="font-serif text-xl md:text-2xl text-[#3b2e21] tracking-widest uppercase mb-1 drop-shadow-sm">
+            <div className="border border-[#524131] py-1.5 md:py-2.5 px-2 text-center flex flex-col items-center justify-center transition-colors duration-500 group-hover:border-[#ebe3cf]">
+                <h4 className="font-serif text-base md:text-xl text-[#3b2e21] tracking-widest uppercase mb-0 drop-shadow-sm transition-colors duration-500 group-hover:text-[#ebe3cf]">
                   {title}
                 </h4>
-                <p className="font-serif italic text-base md:text-lg text-[#5e4b38]">
+                <p className="font-serif italic text-[11px] md:text-base text-[#5e4b38] transition-colors duration-500 group-hover:text-[#ebe3cf]">
                   {subtitle}
                 </p>
             </div>
