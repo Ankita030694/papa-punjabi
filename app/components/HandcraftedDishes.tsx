@@ -8,43 +8,43 @@ const dishes = [
   {
     title: "FAUJI MUTTON",
     description: "Slow-cooked mutton in a rich, spicy gravy inspired by traditional North Indian army mess recipes. Bold flavours, tender meat, and pure desi comfort.",
-    image: "/assets/panjabi/dishes/dish1.jpg",
+    image: "/assets/dishes/Fauji mutton.jpg",
     isNonVeg: true,
   },
   {
     title: "CHICKEN METHI MALAI (BONELESS)",
     description: "Creamy chicken cooked with fresh methi leaves, mild spices, and buttery gravy. Smooth, aromatic, and perfectly comforting.",
-    image: "/assets/panjabi/dishes/dish2.jpg",
+    image: "/assets/dishes/methi malai.jpg",
     isNonVeg: true,
   },
   {
     title: "CHICKEN BLACK PEPPER (PROTEIN DIET)",
     description: "Juicy chicken tossed in a bold black pepper sauce with balanced spices. Light, flavorful, and perfect for a high-protein meal",
-    image: "/assets/panjabi/dishes/dish3.jpg",
+    image: "/assets/dishes/Chciken black pepper.jpg",
     isNonVeg: true,
   },
   {
     title: "PANEER MAKHANI",
     description: "Soft paneer cubes simmered in a rich tomato-butter gravy with subtle spices and cream. A classic North Indian favourite.",
-    image: "/assets/panjabi/dishes/dish4.jpg",
+    image: "/assets/dishes/Paneer makhni.jpg",
     isNonVeg: false,
   },
   {
     title: "DAL MAKHANI (FULL)",
     description: "Slow-cooked black lentils simmered overnight with butter, cream, and traditional spices for that deep Punjabi flavour.",
-    image: "/assets/panjabi/dishes/dish5.jpg",
+    image: "/assets/dishes/Dal makhni.jpg",
     isNonVeg: false,
   },
   {
     title: "SPECIAL RAJMA",
     description: "Home-style kidney beans cooked in a thick, comforting masala gravy, hearty, wholesome, and full of flavour.",
-    image: "/assets/panjabi/dishes/dish6.jpg",
+    image: "/assets/dishes/Rajma.jpg",
     isNonVeg: false,
   },
   {
     title: "BOILED RICE",
     description: "Simple, fluffy steamed rice, the perfect companion to rich curries and gravies.",
-    image: "/assets/panjabi/dishes/dish6.jpg",
+    image: "/assets/dishes/Rice.jpg",
     isNonVeg: false,
   }
 ];
