@@ -19,13 +19,14 @@ export default function BehindTheTaste() {
             </p>
           </div>
 
-          <div className="flex justify-center md:justify-start lg:pl-6">
+          <div className="flex justify-center md:justify-start lg:pl-6 relative">
             <Image 
               src="/assets/panjabi/Frame 3.svg" 
               alt="Founders Illustration" 
               width={380} 
               height={380} 
               className="w-full max-w-[380px] object-contain drop-shadow-md"
+              style={{ height: 'auto' }}
             />
           </div>
 
@@ -42,13 +43,14 @@ export default function BehindTheTaste() {
 
         {/* Right Column */}
         <div className="flex flex-col gap-12 md:pt-12 lg:-mt-10">
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end relative">
             <Image 
-              src="/assets/panjabi/vector.jpg" 
+              src="/assets/dishes/Fauji mutton.jpg" 
               alt="Fauji Mutton Signature Dish" 
               width={400} 
               height={400} 
               className="w-full max-w-[400px] object-cover shadow-xl"
+              style={{ height: 'auto' }}
             />
           </div>
 
