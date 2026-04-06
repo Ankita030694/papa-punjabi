@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 
@@ -8,9 +9,10 @@ interface HoverVideoCardProps {
   videoSrc: string;
   title: string;
   subtitle: string;
+  href: string;
 }
 
-function HoverVideoCard({ imageSrc, videoSrc, title, subtitle }: HoverVideoCardProps) {
+function HoverVideoCard({ imageSrc, videoSrc, title, subtitle, href }: HoverVideoCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -28,7 +30,9 @@ function HoverVideoCard({ imageSrc, videoSrc, title, subtitle }: HoverVideoCardP
     }
   };
 
-  return (
+  const isExternal = href.startsWith('http') || href.startsWith('tel:');
+
+  const CardContent = (
     <div 
       className="relative w-full aspect-[4/5] overflow-hidden group cursor-pointer"
       onMouseEnter={handleMouseEnter}
@@ -74,6 +78,20 @@ function HoverVideoCard({ imageSrc, videoSrc, title, subtitle }: HoverVideoCardP
       </div>
     </div>
   );
+
+  if (isExternal) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {CardContent}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href}>
+      {CardContent}
+    </Link>
+  );
 }
 
 export default function OrderMadeSimple() {
@@ -99,6 +117,7 @@ export default function OrderMadeSimple() {
               videoSrc="/assets/panjabi/View MEnu.mp4"
               title="VIEW MENU"
               subtitle="Explore our full selection"
+              href="/menu"
             />
 
             <HoverVideoCard 
@@ -106,6 +125,7 @@ export default function OrderMadeSimple() {
               videoSrc="/assets/panjabi/Order on whatsapp.mp4"
               title="ORDER ON WHATSAPP"
               subtitle="Quick & easy ordering"
+              href="https://wa.me/917428199631?text=I%20want%20to%20order"
             />
 
         </div>
@@ -113,3 +133,4 @@ export default function OrderMadeSimple() {
     </section>
   );
 }
+

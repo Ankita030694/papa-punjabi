@@ -59,7 +59,7 @@ export default function PunjabiHero() {
           <img 
             src="/assets/panjabi/LOGO (1).svg" 
             alt="Logo" 
-            className="w-auto h-16 md:h-14 lg:h-16"
+            className="w-auto h-16 md:h-36 lg:h-30"
           />
         </motion.div>
 
