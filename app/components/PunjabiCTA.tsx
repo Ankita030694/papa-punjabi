@@ -118,14 +118,19 @@ export default function PunjabiCTA() {
 
           {/* CTA Button block */}
           <div className="mt-8">
-            <button className="w-full bg-[#3a2e20] text-[#F0ECE0] py-3.5 md:py-4.5 px-8 font-playfair hover:bg-[#4e3c25] transition-all duration-300 shadow-lg flex flex-col items-center justify-center gap-1 group/btn">
+            <a 
+              href="https://wa.me/917428199631?text=I%20want%20to%20join%20the%20WhatsApp%20group"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-[#3a2e20] text-[#F0ECE0] py-3.5 md:py-4.5 px-8 font-playfair hover:bg-[#4e3c25] transition-all duration-300 shadow-lg flex flex-col items-center justify-center gap-1 group/btn no-underline"
+            >
               <span className="text-[17px] md:text-[20px] tracking-[0.05em] uppercase leading-tight font-bold">
                 Join WhatsApp Group
               </span>
               <span className="text-[10px] md:text-[12px] italic opacity-90 font-medium tracking-wide">
                 Get daily specials first
               </span>
-            </button>
+            </a>
           </div>
         </CardBorder>
       </motion.div>

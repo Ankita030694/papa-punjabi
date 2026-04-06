@@ -12,15 +12,21 @@ const dishes = [
     isNonVeg: true,
   },
   {
-    title: "CHICKEN METHI MALAI (BONELESS)",
+    title: "CHICKEN METHI MALAI",
     description: "Creamy chicken cooked with fresh methi leaves, mild spices, and buttery gravy. Smooth, aromatic, and perfectly comforting.",
-    image: "/assets/dishes/methi malai.jpg",
+    image: "/assets/dishes/chicken_methi_malai.jpg",
     isNonVeg: true,
   },
   {
-    title: "CHICKEN BLACK PEPPER (PROTEIN DIET)",
+    title: "CHICKEN BLACK PEPPER",
     description: "Juicy chicken tossed in a bold black pepper sauce with balanced spices. Light, flavorful, and perfect for a high-protein meal",
     image: "/assets/dishes/Chciken black pepper.jpg",
+    isNonVeg: true,
+  },
+  {
+    title: "EGG CURRY",
+    description: "Hard-boiled eggs simmered in a flavorful tomato-onion gravy with aromatic spices. A protein-packed Punjabi comfort meal.",
+    image: "/assets/dishes/Egg.jpg.jpeg",
     isNonVeg: true,
   },
   {
@@ -30,15 +36,27 @@ const dishes = [
     isNonVeg: false,
   },
   {
-    title: "DAL MAKHANI (FULL)",
+    title: "DAL MAKHANI",
     description: "Slow-cooked black lentils simmered overnight with butter, cream, and traditional spices for that deep Punjabi flavour.",
     image: "/assets/dishes/Dal makhni.jpg",
     isNonVeg: false,
   },
   {
-    title: "SPECIAL RAJMA",
-    description: "Home-style kidney beans cooked in a thick, comforting masala gravy, hearty, wholesome, and full of flavour.",
-    image: "/assets/dishes/Rajma.jpg",
+    title: "KADAI PANEER",
+    description: "Succulent paneer cubes tossed with bell peppers and onions in a spicy, aromatic masala. A restaurant favorite.",
+    image: "/assets/dishes/Paneer.jpg.jpeg",
+    isNonVeg: false,
+  },
+  {
+    title: "JEERA ALOO",
+    description: "Simple and soul-satisfying potatoes sautéed with cumin seeds, turmeric, and fresh ginger. A quintessential North Indian side dish.",
+    image: "/assets/dishes/Aloo.jpg.jpeg",
+    isNonVeg: false,
+  },
+  {
+    title: "RAJMA CHAWAL",
+    description: "The ultimate Punjabi comfort duo—spiced red kidney beans served with fluffy steamed rice.",
+    image: "/assets/dishes/Rajma + Rice.jpg.jpeg",
     isNonVeg: false,
   },
   {
