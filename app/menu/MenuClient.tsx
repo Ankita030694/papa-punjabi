@@ -149,9 +149,9 @@ export default function MenuClient() {
       <nav className="w-full h-[12vh] flex items-center justify-center pt-6 pb-4">
         <Link href="/" className="hover:scale-105 transition-transform duration-300">
           <img 
-            src="/assets/panjabi/LOGO (1).svg" 
+            src="/assets/panjabi/pp_logo.svg" 
             alt="Logo" 
-            className="w-auto h-16 md:h-36 lg:h-36"
+            className="w-auto h-16 md:h-50 lg:h-36 mt-5"
           />
         </Link>
       </nav>

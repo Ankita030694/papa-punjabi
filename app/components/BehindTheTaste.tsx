@@ -19,7 +19,7 @@ export default function BehindTheTaste() {
             </p>
           </div>
 
-          <div className="flex justify-center md:justify-start lg:pl-6 relative">
+          <div className="flex justify-center md:justify-start lg:pl-6 relative mt-30">
             <Image 
               src="/assets/panjabi/Frame 3.svg" 
               alt="Founders Illustration" 
@@ -31,13 +31,23 @@ export default function BehindTheTaste() {
           </div>
 
           {/* Signature Dish Text - MOBILE ONLY (Shown below founder image on mobile) */}
-          <div className="flex flex-col items-center text-right gap-3 md:hidden">
-            <h3 className="font-Playfair Display text-3xl text-[#3a2e20]">
+          <div className="flex flex-col items-center text-center gap-4 md:hidden">
+            <h3 className="font-playfair text-3xl text-[#3a2e20]">
               Signature Dish &mdash; Fauji Mutton
             </h3>
-            <p className="font-Cormorant italic text-lg leading-relaxed max-w-sm text-[#422700] font-weight-500">
+           
+            <p className="font-cormorant italic text-lg leading-relaxed max-w-sm text-[#564937]">
               Slow-cooked to perfection with bold spices, deep flavors, and a comforting richness. A recipe inspired by tradition, made to be remembered.
             </p>
+             <div className="flex justify-center">
+              <Image 
+                src="/assets/panjabi/pp_logo.svg" 
+                alt="Punjabi Papa Logo" 
+                width={120} 
+                height={60} 
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
 
@@ -54,13 +64,23 @@ export default function BehindTheTaste() {
             />
           </div>
 
-          <div className="hidden md:flex flex-col items-end text-right gap-3 lg:pr-4">
-            <h3 className="font-serif text-2xl md:text-3xl text-[#3a2e20]">
+          <div className="hidden md:flex flex-col items-end text-right gap-4 lg:pr-4">
+            <h3 className="font-playfair text-2xl md:text-3xl text-[#3a2e20]">
               Signature Dish &mdash; Fauji Mutton
             </h3>
-            <p className="font-serif italic text-lg leading-relaxed max-w-sm text-[#564937]">
+           
+            <p className="font-playfair italic text-lg leading-relaxed max-w-sm text-[#564937]">
               Slow-cooked to perfection with bold spices, deep flavors, and a comforting richness. A recipe inspired by tradition, made to be remembered.
             </p>
+             <div className="flex justify-end w-full -mt-10">
+              <Image 
+                src="/assets/panjabi/pp_logo.svg" 
+                alt="Punjabi Papa Logo" 
+                width={500} 
+                height={70} 
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
         

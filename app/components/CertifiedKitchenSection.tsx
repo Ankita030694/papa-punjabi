@@ -25,6 +25,16 @@ export default function CertifiedKitchenSection() {
             </h2>
           </div>
 
+          <div className="flex justify-start py-2">
+            <Image 
+              src="/assets/panjabi/pp_logo.svg" 
+              alt="Punjabi Papa Logo" 
+              width={250} 
+              height={90} 
+              className="object-contain"
+            />
+          </div>
+
           <div className="space-y-4 max-w-[500px]">
             <p className="font-cormorant italic text-[#5a4530] text-lg md:text-xl leading-relaxed">
               Our kitchen is FSSAI certified, ensuring every meal is prepared with the highest standards of hygiene, safety, and care.

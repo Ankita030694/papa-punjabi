@@ -57,15 +57,15 @@ export default function PunjabiHero() {
         >
           {/* Standard img tag for the SVG to avoid next/image space issues in urls and allow simple loading */}
           <img 
-            src="/assets/panjabi/LOGO (1).svg" 
+            src="/assets/panjabi/pp_logo.svg" 
             alt="Logo" 
-            className="w-auto h-16 md:h-36 lg:h-30"
+            className="w-auto h-50 md:h-36 lg:h-50 mt-15"
           />
         </motion.div>
 
         {/* Dynamic Video Wrapper */}
         <motion.div 
-          className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center overflow-hidden"
+          className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center overflow-hidden lg:mt-30 mt-10"
           style={{ 
             width: widthTransform, 
             height: heightTransform,
