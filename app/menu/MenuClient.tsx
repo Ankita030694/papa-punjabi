@@ -19,7 +19,7 @@ const dishes = [
     id: 2,
     name: "CHICKEN BLACK PEPPER",
     description: "A bold and aromatic specialty featuring tender chicken cooked with freshly ground black peppercorns and aromatic spices for that perfect kick.",
-    image: "/assets/dishes/Chciken black pepper.jpg",
+    image: "/assets/dishes/chicken_black_pepper.jpeg",
     isVeg: false,
     badge: "Chef's Special"
   },
@@ -58,7 +58,7 @@ const dishes = [
   },
   {
     id: 9,
-    name: "PROTIEN EGG",
+    name: "MASALA PROTIEN EGG",
     description: "Hard-boiled eggs simmered in a flavorful tomato-onion gravy with aromatic spices. A protein-packed Punjabi comfort meal.",
     image: "/assets/dishes/Egg.jpg.jpeg",
     isVeg: false,
@@ -119,7 +119,16 @@ const dishes = [
     image: "/assets/dishes/Aloo_jeera.jpeg",
     isVeg: true,
     badge: ""
-  }
+  },
+    {
+    id: 17,
+    name: "TAWA ROTI/GHEE ROTI",
+    description: "Simple, fluffy steamed rice, the perfect companion to rich curries and gravies.",
+    image: "/assets/dishes/roti.jpeg",
+    isVeg: true,
+    badge: ""
+  },
+
 ];
 
 export default function MenuClient() {

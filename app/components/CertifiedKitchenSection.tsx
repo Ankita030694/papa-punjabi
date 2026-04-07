@@ -34,20 +34,7 @@ export default function CertifiedKitchenSection() {
             </p>
           </div>
 
-          {/* Button */}
-          <div className="pt-4">
-            <button 
-              className="inline-flex flex-col items-center justify-center border-2 border-[#3a2e20] text-[#3a2e20] py-4 px-12 hover:bg-[#3a2e20] hover:text-[#F2EDDF] transition-colors duration-300 group cursor-pointer"
-              onClick={() => window.open('/assets/footer/6286913885966000f43e0fdafbb6a1379845db3c.png', '_blank')}
-            >
-              <span className="font-playfair font-bold text-lg md:text-xl tracking-wider">
-                VIEW CERTIFICATE
-              </span>
-              <span className="font-cormorant italic text-sm md:text-base opacity-80">
-                Download our FSSAI approval
-              </span>
-            </button>
-          </div>
+          
         </motion.div>
 
         {/* Right Side: FSSAI Logo with Dashed Border */}
