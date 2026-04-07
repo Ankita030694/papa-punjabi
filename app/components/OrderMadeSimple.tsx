@@ -123,9 +123,9 @@ export default function OrderMadeSimple() {
             <HoverVideoCard 
               imageSrc="/assets/panjabi/4d4532cacf426a1f2e8504a967becf1bd94549f9.jpg"
               videoSrc="/assets/panjabi/Order on whatsapp.mp4"
-              title="ORDER ON WHATSAPP"
+              title="ORDER NOW"
               subtitle="Quick & easy ordering"
-              href="https://wa.me/917428199631?text=I%20want%20to%20order"
+              href="https://wa.me/c/917428199631"
             />
 
         </div>

@@ -47,17 +47,10 @@ const dishes = [
     isVeg: false,
     badge: "Chef's Special"
   },
-  {
-    id: 7,
-    name: "KADAI PANEER",
-    description: "Succulent paneer cubes tossed with bell peppers and onions in a spicy, aromatic masala. A restaurant favorite.",
-    image: "/assets/dishes/Paneer.jpg.jpeg",
-    isVeg: true,
-    badge: ""
-  },
+
   {
     id: 8,
-    name: "JEERA ALOO",
+    name: "ALOO SABJI",
     description: "Simple and soul-satisfying potatoes sautéed with cumin seeds, turmeric, and fresh ginger. A quintessential North Indian side dish.",
     image: "/assets/dishes/Aloo.jpg.jpeg",
     isVeg: true,
@@ -65,7 +58,7 @@ const dishes = [
   },
   {
     id: 9,
-    name: "EGG CURRY",
+    name: "PROTIEN EGG",
     description: "Hard-boiled eggs simmered in a flavorful tomato-onion gravy with aromatic spices. A protein-packed Punjabi comfort meal.",
     image: "/assets/dishes/Egg.jpg.jpeg",
     isVeg: false,
@@ -90,14 +83,14 @@ const dishes = [
   {
     id: 12,
     name: "DAL + CHAWAL",
-    description: "Comforting yellow lentils tempered with cumin and garlic, served with fluffy steamed rice.",
+    description: "Comforting Dal Makhni tempered with cumin and garlic, served with fluffy steamed rice.",
     image: "/assets/dishes/Dal + Roti.jpg.jpeg",
     isVeg: true,
     badge: ""
   },
   {
     id: 13,
-    name: "PANEER + ROTI",
+    name: "PANEER MAKHNI + ROTI",
     description: "Succulent paneer in a rich gravy paired with soft Rotis for a classic North Indian experience.",
     image: "/assets/dishes/Paneer + Roti.jpg.jpeg",
     isVeg: true,
@@ -105,9 +98,25 @@ const dishes = [
   },
   {
     id: 14,
+    name: "PANEER MAKHNI + CHAWAL",
+    description: "Succulent paneer in a rich gravy paired with soft Rotis for a classic North Indian experience.",
+    image: "/assets/dishes/Paneer + Roti.jpg(1).jpeg",
+    isVeg: true,
+    badge: ""
+  },
+  {
+    id: 15,
     name: "STEAMED RICE",
     description: "Simple, fluffy steamed rice, the perfect companion to rich curries and gravies.",
     image: "/assets/dishes/Rice.jpg",
+    isVeg: true,
+    badge: ""
+  },
+  {
+    id: 16,
+    name: "ALOO JEERA",
+    description: "Simple, fluffy steamed rice, the perfect companion to rich curries and gravies.",
+    image: "/assets/dishes/Aloo_jeera.jpeg",
     isVeg: true,
     badge: ""
   }
@@ -228,7 +237,7 @@ export default function MenuClient() {
               </p>
 
               <a 
-                href={`${whatsappLink}${encodeURIComponent(dish.name)}`}
+                href="https://wa.me/c/917428199631"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-[#422700] text-white py-3 font-semibold tracking-widest text-sm hover:bg-[#523300] transition-colors text-center uppercase"

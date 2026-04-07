@@ -30,7 +30,7 @@ export default function CertifiedKitchen() {
               rel="noopener noreferrer"
               className="text-[12px] sm:text-sm md:text-base font-bold uppercase tracking-wide hover:text-white transition-colors"
             >
-              Catalogue
+              Order Now
             </a>
           </div>
 
