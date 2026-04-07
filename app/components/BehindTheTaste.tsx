@@ -19,7 +19,7 @@ export default function BehindTheTaste() {
             </p>
           </div>
 
-          <div className="flex justify-center md:justify-start lg:pl-6 relative mt-30">
+          <div className="flex justify-center md:justify-start lg:pl-6 relative mt-12">
             <Image 
               src="/assets/panjabi/Frame 3.svg" 
               alt="Founders Illustration" 
@@ -55,7 +55,7 @@ export default function BehindTheTaste() {
         <div className="flex flex-col gap-12 md:pt-12 lg:-mt-10">
           <div className="flex justify-center md:justify-end relative">
             <Image 
-              src="/assets/dishes/Fauji mutton.jpg" 
+              src="/assets/dishes/fauji_mutton.jpg" 
               alt="Fauji Mutton Signature Dish" 
               width={400} 
               height={400} 
