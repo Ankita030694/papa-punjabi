@@ -20,35 +20,35 @@ const dishes = [
   {
     title: "CHICKEN BLACK PEPPER",
     description: "Juicy chicken tossed in a bold black pepper sauce with balanced spices. Light, flavorful, and perfect for a high-protein meal",
-    image: "/assets/dishes/Chciken black pepper.jpg",
+    image: "/assets/dishes/chicken_black_pepper.jpeg",
     isNonVeg: true,
   },
   {
-    title: "EGG CURRY",
+    title: "MASALA PROTIEN EGG",
     description: "Hard-boiled eggs simmered in a flavorful tomato-onion gravy with aromatic spices. A protein-packed Punjabi comfort meal.",
     image: "/assets/dishes/Egg.jpg.jpeg",
     isNonVeg: true,
   },
   {
-    title: "PANEER MAKHANI",
+    title: "PANEER MAKHNI",
     description: "Soft paneer cubes simmered in a rich tomato-butter gravy with subtle spices and cream. A classic North Indian favourite.",
     image: "/assets/dishes/Paneer makhni.jpg",
     isNonVeg: false,
   },
   {
-    title: "DAL MAKHANI",
+    title: "DAL MAKHNI",
     description: "Slow-cooked black lentils simmered overnight with butter, cream, and traditional spices for that deep Punjabi flavour.",
     image: "/assets/dishes/Dal makhni.jpg",
     isNonVeg: false,
   },
   {
-    title: "KADAI PANEER",
-    description: "Succulent paneer cubes tossed with bell peppers and onions in a spicy, aromatic masala. A restaurant favorite.",
-    image: "/assets/dishes/Paneer.jpg.jpeg",
+    title: "ALOO JEERA",
+    description: "Cumin-tempered potatoes cooked with aromatic spices, fresh coriander, and a touch of ginger. A classic Punjabi side dish.",
+    image: "/assets/dishes/Aloo_jeera.jpeg",
     isNonVeg: false,
   },
   {
-    title: "JEERA ALOO",
+    title: "ALOO SABJI",
     description: "Simple and soul-satisfying potatoes sautéed with cumin seeds, turmeric, and fresh ginger. A quintessential North Indian side dish.",
     image: "/assets/dishes/Aloo.jpg.jpeg",
     isNonVeg: false,
@@ -60,7 +60,7 @@ const dishes = [
     isNonVeg: false,
   },
   {
-    title: "BOILED RICE",
+    title: "STEAMED RICE",
     description: "Simple, fluffy steamed rice, the perfect companion to rich curries and gravies.",
     image: "/assets/dishes/Rice.jpg",
     isNonVeg: false,
@@ -137,26 +137,37 @@ export default function HandcraftedDishes() {
                 </p>
 
                 {/* Navigation Controls */}
-                <div className="mt-8 flex items-center gap-6 select-none w-fit">
-                  {!isFirst && (
-                    <button 
-                      onClick={prevSlide}
-                      className="font-serif text-lg md:text-xl text-[#3a2e20] tracking-widest uppercase hover:opacity-60 transition-opacity cursor-pointer"
-                    >
-                      PREVIOUS
-                    </button>
-                  )}
-                  
-                  <div className="w-12 md:w-16 h-[2px] bg-[#3a2e20]"></div>
+                <div className="mt-8 flex flex-col gap-8">
+                  <div className="flex items-center gap-6 select-none w-fit">
+                    {!isFirst && (
+                      <button 
+                        onClick={prevSlide}
+                        className="font-serif text-lg md:text-xl text-[#3a2e20] tracking-widest uppercase hover:opacity-60 transition-opacity cursor-pointer"
+                      >
+                        PREVIOUS
+                      </button>
+                    )}
+                    
+                    <div className="w-12 md:w-16 h-[2px] bg-[#3a2e20]"></div>
 
-                  {!isLast && (
-                    <button 
-                      onClick={nextSlide}
-                      className="font-serif text-lg md:text-xl text-[#3a2e20] tracking-widest uppercase hover:opacity-60 transition-opacity cursor-pointer"
-                    >
-                      NEXT
-                    </button>
-                  )}
+                    {!isLast && (
+                      <button 
+                        onClick={nextSlide}
+                        className="font-serif text-lg md:text-xl text-[#3a2e20] tracking-widest uppercase hover:opacity-60 transition-opacity cursor-pointer"
+                      >
+                        NEXT
+                      </button>
+                    )}
+                  </div>
+
+                  <a 
+                    href="/menu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-3.5 border border-[#3a2e20] text-[#3a2e20] font-serif tracking-[0.15em] uppercase hover:bg-[#3a2e20] hover:text-[#F0ECE0] transition-all duration-300 w-fit text-xs md:text-sm font-semibold"
+                  >
+                    View Full Catalogue
+                  </a>
                 </div>
               </div>
 
