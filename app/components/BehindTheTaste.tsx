@@ -64,6 +64,15 @@ export default function BehindTheTaste() {
             />
           </div>
 
+          <div className="flex justify-center md:justify-end -mt-6">
+            <a 
+              href="tel:+917428199631"
+              className="inline-block px-8 py-3 dark:border-[#3a2e20] border-[#3a2e20] border text-[#3a2e20] font-serif tracking-[0.1em] uppercase hover:bg-[#3a2e20] hover:text-[#F0ECE0] transition-all duration-300 w-fit text-xs md:text-sm font-bold shadow-md"
+            >
+              Call Us Now for Order
+            </a>
+          </div>
+
           <div className="hidden md:flex flex-col items-end text-right gap-4 lg:pr-4">
             <h3 className="font-playfair text-2xl md:text-3xl text-[#3a2e20]">
               Signature Dish &mdash; Fauji Mutton
