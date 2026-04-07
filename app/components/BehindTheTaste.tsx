@@ -33,7 +33,7 @@ export default function BehindTheTaste() {
           {/* Signature Dish Text - MOBILE ONLY (Shown below founder image on mobile) */}
           <div className="flex flex-col items-center text-center gap-4 md:hidden">
             <h3 className="font-playfair text-3xl text-[#3a2e20]">
-              Signature Dish &mdash; Fauji Mutton
+              Signature Dish &mdash; Punjabi Papa Mutton
             </h3>
            
             <p className="font-cormorant italic text-lg leading-relaxed max-w-sm text-[#564937]">
@@ -56,7 +56,7 @@ export default function BehindTheTaste() {
           <div className="flex justify-center md:justify-end relative">
             <Image 
               src="/assets/dishes/fauji_mutton.jpg" 
-              alt="Fauji Mutton Signature Dish" 
+              alt="Punjabi Papa Mutton Signature Dish" 
               width={400} 
               height={400} 
               className="w-full max-w-[400px] object-cover shadow-xl"
@@ -75,7 +75,7 @@ export default function BehindTheTaste() {
 
           <div className="hidden md:flex flex-col items-end text-right gap-4 lg:pr-4">
             <h3 className="font-playfair text-2xl md:text-3xl text-[#3a2e20]">
-              Signature Dish &mdash; Fauji Mutton
+              Signature Dish &mdash; Punjabi Papa Mutton
             </h3>
            
             <p className="font-playfair italic text-lg leading-relaxed max-w-sm text-[#564937]">

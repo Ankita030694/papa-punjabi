@@ -25,8 +25,8 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: "Papa Punjabi | Authentic Home-Style Punjabi Food",
-  description: "Experience the true warmth of home-style Punjabi cooking. Freshly prepared, traditional dishes including Fauji Mutton, Dal Makhni, and more, delivered with love.",
-  keywords: ["Punjabi food", "Home-style cooking", "Fauji Mutton", "Dal Makhni", "Authentic Punjabi dishes", "Freshly prepared meals", "North Indian food delivery"],
+  description: "Experience the true warmth of home-style Punjabi cooking. Freshly prepared, traditional dishes including Punjabi Papa Mutton, Dal Makhni, and more, delivered with love.",
+  keywords: ["Punjabi food", "Home-style cooking", "Punjabi Papa Mutton", "Dal Makhni", "Authentic Punjabi dishes", "Freshly prepared meals", "North Indian food delivery"],
   authors: [{ name: "Papa Punjabi" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/favicon-96x96.png",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",

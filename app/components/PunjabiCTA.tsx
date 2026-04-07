@@ -119,7 +119,7 @@ export default function PunjabiCTA() {
           {/* CTA Button block */}
           <div className="mt-8">
             <a 
-              href="https://wa.me/917428199631?text=I%20want%20to%20join%20the%20WhatsApp%20group"
+              href="https://chat.whatsapp.com/I19jRNWv170JihM5L3y9et?mode=gi_t"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-[#3a2e20] text-[#F0ECE0] py-3.5 md:py-4.5 px-8 font-playfair hover:bg-[#4e3c25] transition-all duration-300 shadow-lg flex flex-col items-center justify-center gap-1 group/btn no-underline"

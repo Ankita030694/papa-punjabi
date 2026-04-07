@@ -9,8 +9,8 @@ import CertifiedKitchen from '../components/footer';
 const dishes = [
   {
     id: 1,
-    name: "FAUJI MUTTON",
-    description: "Slow-cooked mutton in a rich, spicy gravy inspired by traditional North Indian army mess recipes. Bold flavours, tender meat, and pure desi comfort.",
+    name: "PUNJABI PAPA MUTTON",
+    description: "Slow-cooked to perfection with bold spices, deep flavors, and a comforting richness. A recipe inspired by tradition, made to be remembered.",
     image: "/assets/dishes/fauji_mutton.jpg",
     isVeg: false,
     badge: "Chef's Special"

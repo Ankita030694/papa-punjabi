@@ -6,8 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const dishes = [
   {
-    title: "FAUJI MUTTON",
-    description: "Slow-cooked mutton in a rich, spicy gravy inspired by traditional North Indian army mess recipes. Bold flavours, tender meat, and pure desi comfort.",
+    title: "PUNJABI PAPA MUTTON",
+    description: "Slow-cooked to perfection with bold spices, deep flavors, and a comforting richness. A recipe inspired by tradition, made to be remembered.",
     image: "/assets/dishes/fauji_mutton.jpg",
     isNonVeg: true,
   },
