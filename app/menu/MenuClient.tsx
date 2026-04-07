@@ -11,7 +11,7 @@ const dishes = [
     id: 1,
     name: "FAUJI MUTTON",
     description: "Slow-cooked mutton in a rich, spicy gravy inspired by traditional North Indian army mess recipes. Bold flavours, tender meat, and pure desi comfort.",
-    image: "/assets/dishes/Fauji mutton.jpg",
+    image: "/assets/dishes/fauji_mutton.jpg",
     isVeg: false,
     badge: "Chef's Special"
   },
@@ -27,7 +27,7 @@ const dishes = [
     id: 3,
     name: "DAL MAKHNI",
     description: "Our signature black lentils, slow-cooked overnight on a charcoal flame, enriched with butter and cream for a velvety, smoky finish.",
-    image: "/assets/dishes/Dal makhni.jpg",
+    image: "/assets/dishes/dal_makhni.jpg",
     isVeg: true,
     badge: "Chef's Special"
   },
@@ -35,7 +35,7 @@ const dishes = [
     id: 4,
     name: "PANEER MAKHNI",
     description: "Soft cottage cheese cubes simmered in a luscious, mildly sweet tomato-based gravy with plenty of butter and silk-smooth cream.",
-    image: "/assets/dishes/Paneer makhni.jpg",
+    image: "/assets/dishes/paneer_makhni.jpg",
     isVeg: true,
     badge: "Chef's Special"
   },
@@ -68,7 +68,7 @@ const dishes = [
     id: 10,
     name: "RAJMA CHAWAL",
     description: "The ultimate Punjabi comfort duo—spiced red kidney beans served with fluffy steamed rice.",
-    image: "/assets/dishes/Rajma + Rice.jpg.jpeg",
+    image: "/assets/dishes/rajma_rice.jpg.jpeg",
     isVeg: true,
     badge: "Popular"
   },
@@ -76,7 +76,7 @@ const dishes = [
     id: 11,
     name: "RAJMA + ROTI",
     description: "Hearty Rajma served with soft, handmade Rotis. A wholesome and filling meal.",
-    image: "/assets/dishes/Rajma + Roti.jpg.jpeg",
+    image: "/assets/dishes/rajma_roti.jpg.jpeg",
     isVeg: true,
     badge: ""
   },
@@ -84,7 +84,7 @@ const dishes = [
     id: 12,
     name: "DAL + CHAWAL",
     description: "Comforting Dal Makhni tempered with cumin and garlic, served with fluffy steamed rice.",
-    image: "/assets/dishes/Dal + Roti.jpg.jpeg",
+    image: "/assets/dishes/dal_roti.jpg.jpeg",
     isVeg: true,
     badge: ""
   },
@@ -92,7 +92,7 @@ const dishes = [
     id: 13,
     name: "PANEER MAKHNI + ROTI",
     description: "Succulent paneer in a rich gravy paired with soft Rotis for a classic North Indian experience.",
-    image: "/assets/dishes/Paneer + Roti.jpg.jpeg",
+    image: "/assets/dishes/paneer_roti.jpg.jpeg",
     isVeg: true,
     badge: ""
   },
@@ -100,7 +100,7 @@ const dishes = [
     id: 14,
     name: "PANEER MAKHNI + CHAWAL",
     description: "Succulent paneer in a rich gravy paired with soft Rotis for a classic North Indian experience.",
-    image: "/assets/dishes/Paneer + Roti.jpg(1).jpeg",
+    image: "/assets/dishes/paneer_roti_alternate.jpg.jpeg",
     isVeg: true,
     badge: ""
   },

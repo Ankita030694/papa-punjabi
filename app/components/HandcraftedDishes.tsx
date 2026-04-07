@@ -8,7 +8,7 @@ const dishes = [
   {
     title: "FAUJI MUTTON",
     description: "Slow-cooked mutton in a rich, spicy gravy inspired by traditional North Indian army mess recipes. Bold flavours, tender meat, and pure desi comfort.",
-    image: "/assets/dishes/Fauji mutton.jpg",
+    image: "/assets/dishes/fauji_mutton.jpg",
     isNonVeg: true,
   },
   {
@@ -32,13 +32,13 @@ const dishes = [
   {
     title: "PANEER MAKHNI",
     description: "Soft paneer cubes simmered in a rich tomato-butter gravy with subtle spices and cream. A classic North Indian favourite.",
-    image: "/assets/dishes/Paneer makhni.jpg",
+    image: "/assets/dishes/paneer_makhni.jpg",
     isNonVeg: false,
   },
   {
     title: "DAL MAKHNI",
     description: "Slow-cooked black lentils simmered overnight with butter, cream, and traditional spices for that deep Punjabi flavour.",
-    image: "/assets/dishes/Dal makhni.jpg",
+    image: "/assets/dishes/dal_makhni.jpg",
     isNonVeg: false,
   },
   {
@@ -56,7 +56,7 @@ const dishes = [
   {
     title: "RAJMA CHAWAL",
     description: "The ultimate Punjabi comfort duo—spiced red kidney beans served with fluffy steamed rice.",
-    image: "/assets/dishes/Rajma + Rice.jpg.jpeg",
+    image: "/assets/dishes/rajma_rice.jpg.jpeg",
     isNonVeg: false,
   },
   {
